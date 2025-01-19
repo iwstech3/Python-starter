@@ -47,38 +47,42 @@ choices = ["rock", "paper", "scissors"]
 # ascii.co.uk/art
 
 # Game loop
+while True:
 
     # Player's choice
-player_choice = input("Your choice (rock/paper/scissors): ").lower()
-index_player_choice=choices.index(player_choice)
-print(pictures[index_player_choice])
+
+    player_choice = input("Your choice (rock/paper/scissors): ").lower()
+    if player_choice=="quit":
+        break;
+    index_player_choice=choices.index(player_choice)
+    print(pictures[index_player_choice])
     
     # Check if the player wants to quit
-if player_choice == "quit":
-    print("Thanks for playing! Goodbye!")
+    if player_choice == "quit":
+        print("Thanks for playing! Goodbye!")
      
 
     # Validate player's input
-if player_choice not in choices:
-    print("Invalid input. Please choose 'rock', 'paper', or 'scissors'.")
+    if player_choice not in choices:
+        print("Invalid input. Please choose 'rock', 'paper', or 'scissors'.")
 
 
     # Computer's random choice
-computer_choice = random.choice(choices)
+    computer_choice = random.choice(choices)
 
-index_computer_choice=choices.index(computer_choice)
-print(pictures[index_computer_choice])
+    index_computer_choice=choices.index(computer_choice)
+    print(pictures[index_computer_choice])
     # Print the choices
-print(f"Computer chose: {computer_choice}")
+    print(f"Computer chose: {computer_choice}")
 
     # Determine the winner
-if player_choice == computer_choice:
-    print("It's a tie!")
-elif (player_choice == "rock" and computer_choice == "scissors") or \
+    if player_choice == computer_choice:
+        print("It's a tie!")
+    elif (player_choice == "rock" and computer_choice == "scissors") or \
     (player_choice == "scissors" and computer_choice == "paper") or \
     (player_choice == "paper" and computer_choice == "rock"):
-    print("You win!")
-else:
-    print("Computer wins!")
+        print("You win!")
+    else:
+       print("Computer wins!")
 
     print("_______________________")  # Add a blank line for better readability
