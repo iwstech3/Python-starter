@@ -108,7 +108,11 @@ lives=0
 # TASK 2: Replacing blanks with correct guessed letters
 # create an empty list called display , for each letter in the chosen word add a "_" to display
 # if chosen word is cat=> display should be ['_','','']
-# loop through each position in the chosen word, if the letter at position matches 'guess' then reveal that letter in the display
+# loop through each position in the chosen word, if the letter at position matches 'guess' then reveal that letter in the 
+
+# TASK 3: CHECK IF USER HAS WON  and allow looping
+
+# TASK4: KEEP TRACK OF PLAYER'S LIVE
 
 #TASK 3: CHECK IF USER HAS WON  and allow looping
 words = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
@@ -155,4 +159,3 @@ while not game_end:
         print("you won")
     print(stages[lives])
 
-# KEEP TRACK OF PLAYER'S LIVE
