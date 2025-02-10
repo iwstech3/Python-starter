@@ -1,33 +1,30 @@
-# take user input
+# new concept: how to use dictionaries to solve problems
+# how to reuse functions
+# difference between print and return
 
+num_1=int(input("Enter the first number"))
+operator=input("Enter any operator : ('-', '*', '/', '+')")
+num_2=int(input("Enter the second number"))
 
+def add(n1, n2):
+    return n1+n2
+def  subtract(n1, n2):
+    return n1-n2;
+def multiply(n1, n2):
+    return n1*n2
+def divide(n1, n2):
+    return n1/n2
 
-calculator_done=False
+operator_box={
+    "+":add,
+    "-":subtract,
+    "*":multiply,
+    "/":divide
+}
 
-# answer=num_1 + num_2
-while not calculator_done:
-    num_1=int(input("Enter the first number: "))
-    operator=input("Pick an operator from this list ('+','-','*', '/')")
-    num_2=int(input("Enter the second number: "))
-  
-    if operator=="+":
-        answer=num_1 + num_2
-        print(f"your answer is  {answer}")
-    elif operator=="*":
-        answer=num_1 *num_2
-        print(f"your answer is  {answer}")
-        
-    elif operator=="-":
-        answer=num_1 - num_2
-        print(f"your answer is  {answer}")
-    elif operator=="/":
-        answer=num_1 - num_2
-        print(f"your answer is  {answer}")
-    else:
-        print("Sorry not in there")
-    
-    
-    stop_game=input("type 'y' to continue and 'n' to stop")
-    if stop_game=='n':
-        calculator_done=True
-        
+# how do we call the functions
+
+my_function=operator_box[operator]
+# operator_box["*"]=>multiply
+answer=my_function(num_1, num_2)
+print(f"{num_1} {operator} {num_2} = {answer}")
