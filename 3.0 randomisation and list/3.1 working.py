@@ -72,7 +72,7 @@ print(my_numbers[:3])
 # [::-1]
 print("Reverse my lists")
 print(my_numbers[::-1])
-# EXPLORE THE SLIDE METHODS
+# EXPLORE THE SLICE METHODS
 
 people=["Faith", "Beleh", "Patrick"];
 # choice

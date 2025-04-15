@@ -35,3 +35,16 @@ names2=input("Enter your second  name")
 # AM PASSING THIS NOW AS ARGUMENTS
 result= say_name(names1, names2)
 print(result)
+
+def stop_running():
+    sum=0
+    for i in range(1, 6):
+        if i==3:
+            return
+        print(f"the value of {i}")
+        sum+=i;
+    return sum
+
+result=stop_running()
+print(result)   
+      

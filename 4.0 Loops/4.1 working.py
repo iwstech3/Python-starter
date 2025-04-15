@@ -98,13 +98,13 @@ while i <= 5:
 
 # 3. Reversing a string
 
-# text = "hello"
-# reversed_text = ""
-# index = len(text) - 1
-# while index >= 0:
-#     reversed_text += text[index]
-#     index -= 1
-# print("Reversed text:", reversed_text)
+text = "hello"
+reversed_text = ""
+index = len(text) - 1
+while index >= 0:
+    reversed_text += text[index]
+    index -= 1
+print("Reversed text:", reversed_text)
 
 
 # 4. Infinite Loops 

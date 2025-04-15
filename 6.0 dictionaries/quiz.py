@@ -2,6 +2,11 @@ from prettytable import PrettyTable
 # import prettytable
 # prettytable.
 
+# table=PrettyTable()
+# table.add_column("name", ["j1","j2", "j3"])
+# table.add_column("age", [12,"j2", "j3"])
+
+
 
 # pip install prettytable
 

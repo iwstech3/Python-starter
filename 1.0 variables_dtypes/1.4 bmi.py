@@ -13,3 +13,7 @@ print(round(7/90, 1))
 # floor operation - round down
 print(12//5)
 print(2**5);
+
+# help you to calculate somebody's bmi
+
+# bmi=weight/height*height

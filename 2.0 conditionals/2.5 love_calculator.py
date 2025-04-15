@@ -26,6 +26,10 @@ e=combine_names.count("e")
 
 add_love=l+o+v+e;
 
+final_score = str(add_true) + str(add_love)
+print(f"{add_true}{add_love}")
+print(final_score)
+
 
 # 4. check the number of times the  the letters in the word LOVE occurs in the combine names
 
@@ -34,3 +38,4 @@ add_love=l+o+v+e;
 # CONDITIONS TO CHECK TO PRINT OUTPUT
 # --IF love_Score > 90 Romeo and Ju
 # --if love_Score > 70  but less than  89-> wawa
+# --if love_SCore >60 but less than 79 -> Message

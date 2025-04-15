@@ -18,17 +18,17 @@ print(digits)
 print(letters)
 print(symbols)
 
-# # Generate random letters
-# password_letters = ''.join(random.choices(letters, k=num_letters))
+# Generate random letters
+password_letters = ''.join(random.choices(letters, k=num_letters))
 
 
-# # Generate random symbols
-# password_symbols = ''.join(random.choices(symbols, k=num_symbols))
+# Generate random symbols
+password_symbols = ''.join(random.choices(symbols, k=num_symbols))
 
-# # Combine all characters and shuffle them to create the password
-# password_list = list(password_digits + password_letters + password_symbols)
-# random.shuffle(password_list)
-# password = ''.join(password_list)
+# Combine all characters and shuffle them to create the password
+password_list = list(password_digits + password_letters + password_symbols)
+random.shuffle(password_list)
+password = ''.join(password_list)
 
-# # Print the generated password
-# print("Generated Password:", password)
+# Print the generated password
+print("Generated Password:", password)

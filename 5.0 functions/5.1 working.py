@@ -24,7 +24,17 @@ name=input("what is your name? ")
 new_greetings(name)
 
 
+# write function to take in your name, age, your school, your department, and print a story based on that
 
+def band_name(name, age, school, department):
+    print(f"My is {name} I am {age} years old from {school}")
+
+name=input("name:")
+age=int(print("age: "))
+school=input("school")
+department=input("your department: ")
+band_name(name, age, school, department)
+    
 
 
 

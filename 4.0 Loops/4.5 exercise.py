@@ -37,10 +37,10 @@ names = ["Alice", "Bob", "Charlie", "Alice", "David", "Alice"]
 target_name = "Alice"
 count = 0
 
-for i in names:
-    if i == target_name:
-        count += 1
-print(f"Name {target_name} occurs {count} times in the list.")
+# for i in names:
+#     if i == target_name:
+#         count += 1
+# print(f"Name {target_name} occurs {count} times in the list.")
 # continue please 😂😁
 # _______________________________________________________________________________________________________________________________________________________________
 
